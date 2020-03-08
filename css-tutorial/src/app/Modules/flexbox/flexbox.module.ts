@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FlexboxRoutingModule } from './flexbox-routing.module';
+import { FlexboxComponent } from './flexbox.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [FlexboxComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexboxRoutingModule
   ]
 })
 export class FlexboxModule { }

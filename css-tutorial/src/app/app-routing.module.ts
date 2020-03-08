@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FlexboxComponent } from './Modules/flexbox/flexbox.component';
+import { HomeComponent } from './Modules/home/home.component';
 
 
 const routes: Routes = [
-  {path: 'flexbox', component: FlexboxComponent}
+  {path: '', component: HomeComponent},
+  {path: 'flexbox', loadChildren: () => import('./Modules/flexbox/flexbox.module').then(m => m.FlexboxModule)}
 ]
 
 @NgModule({

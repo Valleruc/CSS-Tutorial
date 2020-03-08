@@ -3,20 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './Modules/navbar/navbar.component';
-import { FlexboxComponent } from './Modules/flexbox/flexbox.component';
+import { NavbarModule } from './Modules/navbar/navbar.module';
+import { FlexboxModule } from './Modules/flexbox/flexbox.module';
+import { HomeModule } from './Modules/home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    FlexboxComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NavbarModule,
+    FlexboxModule,
+    HomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
