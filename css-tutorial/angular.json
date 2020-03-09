@@ -118,8 +118,13 @@
               "devServerTarget": "css-tutorial:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "css-tutorial"
 }
